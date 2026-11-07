@@ -9,7 +9,6 @@ const categories = [
   "Podcast Lounge",
   "Music Suite",
   "Workshop",
-  "Other",
 ];
 
 const availableAmenities = [
@@ -69,7 +68,7 @@ export default function AddStudioPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/studios", {
+      const res = await fetch("http://localhost:5000/add-studio", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,6 +82,8 @@ export default function AddStudioPage() {
       });
 
       const data = await res.json();
+
+      console.log(data)
 
       if (!res.ok) {
         throw new Error(data.message || "Failed to add studio");
