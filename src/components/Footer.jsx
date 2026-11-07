@@ -10,7 +10,7 @@ import { Button, Description, FieldError, Form, Input, Label, TextField } from "
 const Footer = () => {
 
     return (
-        <div className='my-4 bg-blue-50 fixed bottom-0 flex justify-center items-center left-0 w-full'>
+        <div className='my-4 bg-blue-50'>
             <hr className='border-b border-gray-200' />
             <footer className=' w-full max-w-7xl mx-auto my-4'>
                 <div className='flex gap-6 justify-between mb-4'>

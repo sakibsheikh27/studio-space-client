@@ -1,5 +1,4 @@
 import { Button } from '@heroui/react';
-import { headers } from 'next/headers';
 import Link from 'next/link';
 import React from 'react';
 import { SiObsstudio } from 'react-icons/si';
